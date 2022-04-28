@@ -1,0 +1,200 @@
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/barlow-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/barlow-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/barlow-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/barlow-v5-latin-regular.svg#Barlow') format('svg'); /* Legacy iOS */
+}
+/* barlow-600 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/barlow-v5-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/barlow-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/barlow-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/barlow-v5-latin-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/barlow-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/barlow-v5-latin-600.svg#Barlow') format('svg'); /* Legacy iOS */
+}
+/* barlow-700 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v5-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/barlow-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/barlow-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/barlow-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/barlow-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/barlow-v5-latin-700.svg#Barlow') format('svg'); /* Legacy iOS */
+}
+
+
+*{box-sizing:border-box;}
+
+img{
+    vertical-align:middle;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", "Aria", sans-serif;
+    
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.frame__phone {
+    width: 450px;
+    height: 615px;
+    border: 15px solid black;
+    border-radius: 8%;
+    margin: 50px auto; 
+    padding: 0 20px; 
+    overflow: hidden;
+    position: relative;
+}
+.frame__top {
+    display: inline-block;
+    width: 300px;
+    height: 25px;
+    border-color: black;
+    margin-left: 42px;
+    background-color: black;
+    border: 3px solid black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    
+}
+.frame__color {
+    width: 510px;
+    height: 266px;
+    transform: rotate(27deg);
+    background-color: #5288F4;
+    position: absolute;
+    top: -92px;
+    left: 12px;
+    z-index: -1;
+}
+
+
+
+.phone__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffff;
+
+}
+
+.phone__img{
+    width: 380px;
+    height: 230px;
+    margin-bottom: 25px;
+    
+}
+
+.phone__label{
+    display: block;
+    margin-bottom: 20px
+}
+
+.phone__label:nth-child(4){
+    margin-bottom: 0;
+}
+
+.phone__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.phone__pic{
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+.phone__lock {
+    margin-right: auto;
+    
+
+}
+.phone__text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 3px
+}
+.phone__info {
+    font-size: 15px;
+    font-weight: 400;
+    color: #98A5B0;
+    margin: 0;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+    border-radius: 30px;
+    
+}
+
+.switch__input:checked ~ .switch{
+    background-color: #5288F4;
+    transition: all 0.4s ease;
+}
+
+.switch__input:checked ~  .switch > .switch__controller{
+    left: auto;
+    right: 2px;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+
+.switch__controller{
+    position: absolute;
+    left: 2px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+
